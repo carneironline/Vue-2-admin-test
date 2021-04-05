@@ -1,0 +1,107 @@
+@import '../../../../sass/index.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    // border: none;
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow:  0 0 0 30px #0e1726 inset !important;
+    // transition: background-color 5000s ease-in-out 0s;
+  }
+
+
+  #app {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas:
+      "section-header section-header"
+      "section-subheader section-subheader"
+      "section-menu section-content";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 50px auto;
+
+    @media (max-width: 980px) {
+      grid-template-areas:
+      "section-header "
+      "section-subheader "
+      "section-content ";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px auto;
+
+    .section-menu {
+      display: none;
+    }
+    }
+  }
+
+  svg {
+    fill: #fff;
+  }
+
+  .md-field {
+    background: #0e1726;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 26px;
+    transition: margin-bottom .2s;
+
+    &.md-invalid {
+      margin-bottom: 29px;
+    }
+
+    &.md-focused label {
+      top: 5px;
+    }
+
+    &--button {
+      background: transparent;
+      padding-left: unset;
+    }
+
+    input, label {
+      left: 20px;
+    }
+
+    label {
+      top: 20px;
+    }
+
+    input {
+      color: #fff;
+    }
+
+  }
+
+  .md-button {
+    margin-left: 0;
+    margin-right: 0;
+
+    &.md-primary {
+      background: #fff;
+      color: #040611;
+      font-weight: bold;
+    }
+  }
+
+  .md-error {
+    color: #ffc107;
+    padding-left: 20px;
+    font-size: 14px;
+  }

@@ -1,0 +1,10 @@
+@import '../../../../sass/components/scrollbar/mixin.scss';
+
+.section-content {
+    grid-area: section-content;
+    background: #040611;
+    color: #fff;
+    overflow-y: auto;
+
+    @include scrollbar
+}

@@ -1,0 +1,15 @@
+@mixin buttonPrimary {
+  &.md-primary {
+    background: #0e1726 !important;
+    color: #fff !important;
+    min-width: unset;
+
+    &::before {
+      content: unset;
+    }
+
+    &:hover {
+      background: lighten(#111d31, .1%) !important;
+    }
+  }
+}

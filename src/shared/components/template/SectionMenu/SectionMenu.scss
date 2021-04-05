@@ -1,0 +1,14 @@
+@import '../../../../sass/components/scrollbar/mixin.scss';
+
+.section-menu {
+  grid-area: section-menu;
+  overflow-y: auto;
+  background: #060818;
+  color: #4f648e;
+
+  a {
+    color: #4f648e
+  }
+
+  @include scrollbar;
+}
