@@ -1,18 +1,23 @@
-# vue-admin
+# Vue 2 Admin
 
-> A Vue.js project
+> An admin project for testing purposes from scratch using Vue 2
 
+## Installation
+1. Download and install [Node Js] (https://nodejs.org/en/) in the recommended versiona
+2. Download or clone the project
+3. Access the project root
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn dev
+
+# serve an api using local json-server
+yarn server
 
 # build for production with minification
-npm run build
+yarn build
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
